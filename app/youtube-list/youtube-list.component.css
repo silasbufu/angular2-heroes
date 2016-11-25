@@ -1,0 +1,15 @@
+.search-results img {
+    width: 100%;
+}
+.search-results div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.search-results {
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-height: 60vh;
+  overflow-y: scroll;
+}

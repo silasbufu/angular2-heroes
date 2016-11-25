@@ -1,0 +1,15 @@
+.tech{
+    margin-bottom: 1em;
+    width: 12.3%;
+    float: left;
+}
+.tech img{
+    width: 100%;
+}
+.tech:hover img{
+    width: 95%;
+    opacity: 0.7;
+}
+a {
+    outline: none;
+}

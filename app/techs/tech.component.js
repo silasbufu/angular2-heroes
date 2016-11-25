@@ -9,20 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Ng2 Playlist';
+var techs_component_1 = require('./techs.component');
+var TechComponent = (function () {
+    function TechComponent() {
     }
-    AppComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', techs_component_1.Tech)
+    ], TechComponent.prototype, "tech", void 0);
+    TechComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'my-app',
-            templateUrl: "app.component.html",
-            styleUrls: ['app.component.css']
+            selector: 'fountain-tech',
+            templateUrl: './tech.component.html',
+            styleUrls: ['tech.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], TechComponent);
+    return TechComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.TechComponent = TechComponent;
+//# sourceMappingURL=tech.component.js.map

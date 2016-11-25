@@ -11,7 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
+var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
+var dashboard_component_1 = require('./dashboard/dashboard.component');
+var navbar_component_1 = require('./navbar/navbar.component');
+var youtube_list_component_1 = require('./youtube-list/youtube-list.component');
+var techs_component_1 = require('./techs/techs.component');
+var tech_component_1 = require('./techs/tech.component');
+var app_routing_module_1 = require('./routing/app-routing.module');
+var angular2_infinite_scroll_1 = require('angular2-infinite-scroll');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,10 +27,18 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                forms_1.FormsModule
+                forms_1.FormsModule,
+                app_routing_module_1.AppRoutingModule,
+                angular2_infinite_scroll_1.InfiniteScrollModule,
+                http_1.HttpModule
             ],
             declarations: [
-                app_component_1.AppComponent
+                app_component_1.AppComponent,
+                dashboard_component_1.DashboardComponent,
+                navbar_component_1.NavbarComponent,
+                youtube_list_component_1.YoutubeListComponent,
+                techs_component_1.TechsComponent,
+                tech_component_1.TechComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
