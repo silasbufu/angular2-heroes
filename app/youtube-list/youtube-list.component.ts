@@ -11,7 +11,7 @@ import { InfiniteScroll } from 'angular2-infinite-scroll';
 
 export class YoutubeListComponent {
     list = [];
-    sum = 10;
+    sum = 20;
     constructor() {
         for (let i = 0; i < this.sum; ++i) {
             var tempObj = {

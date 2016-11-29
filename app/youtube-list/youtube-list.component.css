@@ -5,11 +5,24 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
 .search-results {
-  height: auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  max-height: 60vh;
-  overflow-y: scroll;
+}
+.youtube-video-image {
+    cursor: pointer;
+   -moz-transition: all 0.3s;
+   -webkit-transition: all 0.3s;
+   transition: all 0.3s;
+}
+.youtube-video-image:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.youtube-video {
+    overflow: hidden;
+}
+.youtube-video-description {
+    border-width: 1px;
 }

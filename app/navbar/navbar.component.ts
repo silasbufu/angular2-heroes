@@ -11,7 +11,9 @@ import { ROUTES } from './navbar-route.config'
 })
 export class NavbarComponent implements OnInit{
     menuItems: any[];
+    project: {};
     ngOnInit(){
-        this.menuItems = ROUTES;    
+        this.menuItems = ROUTES;
+        this.project = ROUTES[0];    
     }   
 }

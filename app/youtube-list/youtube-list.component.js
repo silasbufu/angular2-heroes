@@ -12,7 +12,7 @@ var core_1 = require('@angular/core');
 var YoutubeListComponent = (function () {
     function YoutubeListComponent() {
         this.list = [];
-        this.sum = 10;
+        this.sum = 20;
         for (var i = 0; i < this.sum; ++i) {
             var tempObj = {
                 youtubeId: "lsJLLEwUYZM"

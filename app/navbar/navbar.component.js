@@ -15,6 +15,7 @@ var NavbarComponent = (function () {
     }
     NavbarComponent.prototype.ngOnInit = function () {
         this.menuItems = navbar_route_config_1.ROUTES;
+        this.project = navbar_route_config_1.ROUTES[0];
     };
     NavbarComponent = __decorate([
         core_1.Component({

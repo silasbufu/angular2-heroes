@@ -5,13 +5,39 @@
         {{menuIcon}}
     </button>
 	</div>
-	<div class="container">
-		<div class="navbar-toggleable-xs navbar-collapse" id="bd-main-nav" [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: isCollapsed}">
-			<ul class="nav navbar-nav">
-				<li (click)="isCollapsed = true" *ngFor="let menuItem of menuItems" class="nav-item" routerLinkActive="active">
-					<a class="nav-item nav-link" [routerLink]="[menuItem.path]" routerLinkActive="active">{{menuItem.title}}</a>
-				</li>
-			</ul>
+
+	<div class="navbar-toggleable-xs navbar-collapse" id="bd-main-nav" [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: isCollapsed}">
+		<div class="container">
+			<div class="row">
+				<div class="btn-group">
+					<div class="btn-group">
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    					Categories
+  					</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">All</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Music Videos</a>
+							<a class="dropdown-item" href="#">Funny Videos</a>
+							<a class="dropdown-item" href="#">Stefan</a>
+						</div>
+					</div>
+					<button type="button" class="btn btn-success">
+						Add Video
+						<span class="fa fa-plus"></span>
+					</button>
+				</div>
+				<div class="col-sm-6">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search by title">
+						<span class="input-group-btn">
+                <button class="btn btn-primary">
+                    <span class="fa fa-search"></span>
+						</button>
+						</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </nav>
